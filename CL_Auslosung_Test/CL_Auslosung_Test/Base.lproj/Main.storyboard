@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CL_Auslosung_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWT-jb-KWj">
+                                <rect key="frame" x="145" y="757" width="103.66666666666669" height="34.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ea1-Rw-wn0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Auslosung"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="132" translatesAutoresizingMaskIntoConstraints="NO" id="Hvp-Kx-0bb">
+                                <rect key="frame" x="16" y="104" width="160" height="596"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uey-qa-Hy2">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="0Ab-1K-NLy"/>
+                                            <constraint firstAttribute="height" constant="50" id="b49-n5-VuX"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="Team A"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAK-Av-343">
+                                        <rect key="frame" x="0.0" y="182" width="160" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="Fg2-M7-igH"/>
+                                            <constraint firstAttribute="height" constant="50" id="KSu-fU-F2E"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="TeamC"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyA-Yy-425">
+                                        <rect key="frame" x="0.0" y="364" width="160" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Gkx-3a-FDL"/>
+                                            <constraint firstAttribute="width" constant="160" id="Qgb-9M-90P"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="TeamE"/>
+                                        <connections>
+                                            <action selector="teamE:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xAw-b2-PL5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIK-cg-NLg">
+                                        <rect key="frame" x="0.0" y="546" width="160" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="gJl-uY-sKq"/>
+                                            <constraint firstAttribute="height" constant="50" id="wFf-Ds-vq7"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="TeamG"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="132" translatesAutoresizingMaskIntoConstraints="NO" id="FRi-n5-Iuw">
+                                <rect key="frame" x="217" y="104" width="160" height="596"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDI-UH-My1">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="OUD-wu-rap"/>
+                                            <constraint firstAttribute="width" constant="160" id="WsO-Vn-wI2"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="TeamB"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsP-oD-7Lr">
+                                        <rect key="frame" x="0.0" y="182" width="160" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="6EC-Mc-2Dw"/>
+                                            <constraint firstAttribute="width" constant="160" id="oO4-KA-ZjX"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="TeamD"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itC-V0-PuK">
+                                        <rect key="frame" x="0.0" y="364" width="160" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="Ads-du-mjY"/>
+                                            <constraint firstAttribute="height" constant="50" id="hto-iZ-TqA"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="TeamF"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb8-7o-pcv">
+                                        <rect key="frame" x="0.0" y="546" width="160" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="PbM-18-gW6"/>
+                                            <constraint firstAttribute="height" constant="50" id="oFa-51-aRK"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="TeamH"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="V.S" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWe-4A-Hr7">
+                                <rect key="frame" x="171" y="381" width="50" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="JWT-jb-KWj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="101" id="846-gq-yWd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JWT-jb-KWj" secondAttribute="bottom" constant="58" id="Ujt-Mn-0if"/>
+                            <constraint firstItem="JWT-jb-KWj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="666" id="eq2-9h-Hno"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="teamA" destination="uey-qa-Hy2" id="E4i-Er-jBr"/>
+                        <outlet property="teamB" destination="vDI-UH-My1" id="0RR-IT-5yD"/>
+                        <outlet property="teamC" destination="kAK-Av-343" id="SFX-ra-RMn"/>
+                        <outlet property="teamD" destination="MsP-oD-7Lr" id="nur-AG-stU"/>
+                        <outlet property="teamE" destination="pyA-Yy-425" id="14d-4M-csQ"/>
+                        <outlet property="teamF" destination="itC-V0-PuK" id="YVW-6R-hws"/>
+                        <outlet property="teamG" destination="SIK-cg-NLg" id="Qmv-0D-r3I"/>
+                        <outlet property="teamH" destination="Mb8-7o-pcv" id="P9x-3d-Mwh"/>
+                        <outlet property="tey" destination="SIK-cg-NLg" id="ZpU-EN-Cst"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116.79389312977099" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

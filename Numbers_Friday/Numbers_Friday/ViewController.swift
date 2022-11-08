@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var btn4: UIButton!
     @IBOutlet weak var btn5: UIButton!
     @IBOutlet weak var btn6: UIButton!
-    
+
     func mainFunction(){
         var numberArray = Array(1...49)
         var numberWinner = [Int]()

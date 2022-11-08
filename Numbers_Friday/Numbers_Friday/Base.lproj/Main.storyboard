@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="9G1-th-IMU">
-                                <rect key="frame" x="15" y="309" width="355" height="100"/>
+                                <rect key="frame" x="15" y="309" width="363" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkC-BI-Klc">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="100"/>
@@ -65,7 +65,7 @@
                                         <buttonConfiguration key="configuration" style="filled" title="15"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9SV-hu-AA0">
-                                        <rect key="frame" x="305" y="0.0" width="50" height="100"/>
+                                        <rect key="frame" x="305" y="0.0" width="58" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="3sl-3d-Lto"/>
                                             <constraint firstAttribute="width" constant="50" id="uHW-X7-VJ5"/>
@@ -76,7 +76,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMc-6n-aJ5">
-                                <rect key="frame" x="140" y="628" width="105" height="50"/>
+                                <rect key="frame" x="140" y="628" width="113" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="cuI-Hz-Z6Z"/>
                                 </constraints>
@@ -107,6 +107,7 @@
                         <outlet property="btn4" destination="9AO-V1-4TP" id="Hmn-Mf-ybV"/>
                         <outlet property="btn5" destination="G0O-8V-hHd" id="oih-Wx-fKk"/>
                         <outlet property="btn6" destination="9SV-hu-AA0" id="Cic-ng-eSX"/>
+                        <outlet property="btn66" destination="EkC-BI-Klc" id="BuH-tA-qKJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
