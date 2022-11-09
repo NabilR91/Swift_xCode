@@ -10,7 +10,23 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource {
     
     let qualifiedTeams = ["Qatar", "Ecuador", "Senegal", "Netherlands", "England", "Iran", "USA", "Wales", "Argentina", "Saudi Arabia", "Mexico", "Poland", "France", "Australia", "Denmark", "Tunisia", "Spain", "Costa Rica", "Germany", "Japan", "Belgium", "Canada", "Morocco", "Croatia", "Brazil", "Serbia", "Switzerland", "Cameroon", "Portugal", "Ghana", "Uruguay", "South Korea"]
-
+    
+    let groupA = ["Qatar", "Ecuador", "Senegal", "Netherlands"]
+    let groupB = ["England", "Iran", "USA", "Wales"]
+    let groupC = ["Argentina", "Saudi Arabia", "Mexico", "Poland"]
+    let groupD = ["France", "Australia", "Denmark", "Tunisia"]
+    let groupE = ["Spain", "Costa Rica", "Germany", "Japan"]
+    let groupF = ["Belgium", "Canada", "Morocco", "Croatia"]
+    let groupG = ["Brazil", "Serbia", "Switzerland", "Cameroon"]
+    let groupH = ["Portugal", "Ghana", "Uruguay", "South Korea"]
+    
+    @IBOutlet weak var countryTable: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView!.dataSource = self
+       
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return qualifiedTeams.count
@@ -29,9 +45,5 @@ class ViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView!.dataSource = self
-       
-    }
+    
 }

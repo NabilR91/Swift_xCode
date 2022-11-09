@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="__3_UiAllertViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="87" translatesAutoresizingMaskIntoConstraints="NO" id="Rz0-gr-Kha">
+                                <rect key="frame" x="71.666666666666686" y="264" width="250" height="324"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2e-xw-6kn">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="fhW-lZ-hii"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="simple Alert"/>
+                                        <connections>
+                                            <action selector="simpleAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ly2-SD-apA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nph-hD-aNm">
+                                        <rect key="frame" x="0.0" y="137" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="D8w-Zk-EqG"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="say Hello Alert"/>
+                                        <connections>
+                                            <action selector="sayHello:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KSX-8G-uLv"/>
+                                            <action selector="sayHelloAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="34D-4N-5rz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmA-8B-cfT">
+                                        <rect key="frame" x="0.0" y="274" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="rd4-E7-NUM"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Alert mit Textfeld und Button"/>
+                                        <connections>
+                                            <action selector="alertTextFeldBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B2w-zQ-DMu"/>
+                                            <action selector="textfeldeingabe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="csX-4b-kTs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="KS2-9v-aHW"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tP-Yu-Vj5">
+                                <rect key="frame" x="72" y="160" width="250" height="65"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rz0-gr-Kha" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3fe-eP-qJd"/>
+                            <constraint firstItem="Rz0-gr-Kha" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JNz-fX-O7p"/>
+                            <constraint firstItem="0tP-Yu-Vj5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="WzI-Kd-rJT"/>
+                            <constraint firstItem="Rz0-gr-Kha" firstAttribute="top" secondItem="0tP-Yu-Vj5" secondAttribute="bottom" constant="39" id="a30-0Q-FRP"/>
+                            <constraint firstItem="0tP-Yu-Vj5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="cNz-Sz-7nq"/>
+                            <constraint firstItem="0tP-Yu-Vj5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zaR-YM-rdW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelText1" destination="0tP-Yu-Vj5" id="LJ4-nO-MqJ"/>
+                        <outlet property="textfeld" destination="0tP-Yu-Vj5" id="qNy-j4-Jzd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.76335877862595414" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
